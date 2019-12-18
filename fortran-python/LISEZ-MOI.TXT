@@ -1,0 +1,37 @@
+Exemple d'appel de fonctions FORTRAN depuis Python3. F. Boulier. 2019
+
+1. Tester l'exemple
+-------------------
+
+make
+python3 exemple-descente.py 
+# doit afficher le résultat suivant
+
+    [[ 2  0  0]
+     [ 3 -1  0]
+     [ 0  1  5]]
+    [ 4  5 16]
+    [2. 1. 3.]
+    [ 2.  1. 16.]
+
+python3 exemple-interpolation.py
+# doit afficher les points et le graphe du polynôme d'interpolation
+
+# suppose matplotlib installé pour python3.
+# Si ce n'est pas le cas, installer matplotlib avec les commandes suivantes
+
+# curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+# python3 get-pip.py --user
+# python3 -m pip install matplotlib --user
+# rm get-pip.py
+
+2. Créer vos propres codes
+--------------------------
+
+. Programmer les actions et les fonctions dans un ou plusieurs fichiers FORTRAN
+    en vous inspirant des exemples (lire les commentaires !)
+. Vérifier qu'ils compilent (gfortran -fimplicit-none -Wall -c mon_fichier.f)
+. Ajouter ces fichiers sur la ligne 10 du Makefile
+. make
+
+
