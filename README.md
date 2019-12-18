@@ -1,5 +1,6 @@
 # ProjetCalculNumeriqueSmoothingSpline
 Scool project on smoothing Spline
+Pour voir le résultat du projet, il faut executer les codes PYTHONS suivant :
 
 hautniveau.py pour la création des splines lissantes avec les fonction haut niveau de scipy sur des données d'essai.
 
